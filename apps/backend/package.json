@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "dev": "tsx watch src/index.ts",
+    "start": "node build/index.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.5",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "hono": "^4.7.5",
+    "mongodb": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "type": "module"
+}
+
