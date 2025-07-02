@@ -7,5 +7,8 @@
   - Creating pull requests
   - git commit operations
 
+## Language Preference
+- PRs and commit messages should be written in Japanese
+
 ## Security Note
 Claude Code should verify the remote repository URL before performing any git operations to ensure it matches the allowed repository above.
