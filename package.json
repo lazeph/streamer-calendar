@@ -2,10 +2,6 @@
   "name": "streamer-calendar",
   "private": true,
   "version": "1.0.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "devDependencies": {
     "@hono/node-server": "^1.13.8",
     "concurrently": "^8.2.2"
