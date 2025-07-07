@@ -44,6 +44,9 @@
       },
       "performance": {
         "recommended": true
+      },
+      "nursery": {
+        "useExhaustiveSwitchCases": "error"
       }
     }
   },
