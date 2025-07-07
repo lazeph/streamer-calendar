@@ -15,6 +15,31 @@
       "apps/**/*.json"
     ]
   },
+  "overrides": [
+    {
+      "includes": ["apps/frontend/**/*"],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "recommended": true
+          },
+          "correctness": {
+            "recommended": true
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/backend/**/*"],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "recommended": false
+          }
+        }
+      }
+    }
+  ],
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
