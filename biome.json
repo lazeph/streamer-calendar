@@ -12,7 +12,10 @@
       "apps/**/*.tsx",
       "apps/**/*.js",
       "apps/**/*.jsx",
-      "apps/**/*.json"
+      "apps/**/*.json",
+      "apps/**/*.jsonc",
+      "apps/**/*.css",
+      "apps/**/*.html"
     ]
   },
   "overrides": [
@@ -88,6 +91,16 @@
     }
   },
   "json": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "html": {
     "formatter": {
       "enabled": true
     }
