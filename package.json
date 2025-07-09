@@ -3,13 +3,20 @@
   "private": true,
   "version": "1.0.0",
   "devDependencies": {
+    "@biomejs/biome": "^2.0.6",
     "@hono/node-server": "^1.13.8",
     "concurrently": "^8.2.2"
   },
   "scripts": {
     "dev:frontend": "pnpm --filter frontend dev",
     "dev:backend": "pnpm --filter backend dev",
-    "dev": "concurrently \"pnpm dev:frontend\" \"pnpm dev:backend\""
+    "dev": "concurrently \"pnpm dev:frontend\" \"pnpm dev:backend\"",
+    "lint": "biome lint ./apps",
+    "lint:fix": "biome lint --write ./apps",
+    "format": "biome format ./apps",
+    "format:fix": "biome format --write ./apps",
+    "check": "biome check ./apps",
+    "check:fix": "biome check --write ./apps"
   },
   "dependencies": {
     "hono": "^4.7.5"

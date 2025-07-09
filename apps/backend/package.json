@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "start": "node build/index.js",
     "build": "tsc"
   },
@@ -24,4 +24,3 @@
   },
   "type": "module"
 }
-

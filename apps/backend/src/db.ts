@@ -1,9 +1,12 @@
-import { MongoClient } from "mongodb";
 import * as dotenv from "dotenv";
+import { MongoClient } from "mongodb";
 
 dotenv.config();
 
-const uri = process.env.MONGO_URI!;
+const uri = process.env.MONGO_URI;
+if (!uri) {
+  throw new Error("MONGO_URI environment variable is not set");
+}
 const client = new MongoClient(uri);
 
 export async function connectToDatabase() {
